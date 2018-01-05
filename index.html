@@ -1,0 +1,819 @@
+<html>
+<head>
+	<title>SpaceCreations</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/package.js"></script>
+	<script src="js/form.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="js/velocity.min.js"></script>
+  	<script scr="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script>
+		$(document).ready(function() {
+		//Preloader
+		$(window).on("load",(function() {
+		var preloaderFadeOutTime = 700;
+		function hidePreloader() {
+		var preloader = $('.spinner-wrapper');
+		preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
+		
+  			
+		}));
+		});
+	</script>
+
+
+  	<style>
+  		body{
+  			/*font-family: 'Ubuntu', sans-serif;*/
+  			font-family: 'lora', sans-serif;
+  		}
+
+  		.nav-bar {
+  			height: 100px;
+  		}
+
+  		.spinner-wrapper {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #000;
+			z-index: 999999;
+
+		}
+		.spinner-wrapper h1{
+			font-size: 50px;
+			color: white;
+			width: 100%;
+			justify-content: center;
+			font-weight: 700;
+			position: absolute;
+			top: 60%;
+			left: 20%;
+
+		}
+
+  		.spinner {
+			  width: 40px;
+			  height: 40px;
+			  position: absolute;
+			  top: 48%;
+			  left: 48%;
+			  background-color: white;
+
+			  border-radius: 100%;  
+			  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+			  animation: sk-scaleout 1.0s infinite ease-in-out;
+			}
+
+			@-webkit-keyframes sk-scaleout {
+			  0% { -webkit-transform: scale(0) }
+			  100% {
+			    -webkit-transform: scale(1.0);
+			    opacity: 0;
+			  }
+			}
+
+			@keyframes sk-scaleout {
+			  0% { 
+			    -webkit-transform: scale(0);
+			    transform: scale(0);
+			  } 100% {
+			    -webkit-transform: scale(1.0);
+			    transform: scale(1.0);
+			    opacity: 0;
+			  }
+			}
+  		
+  	</style>
+</head>
+<body>
+	<div class="spinner-wrapper">
+		<h1>Run Towords What you Fear Most</h1>
+		<div class="spinner"></div>
+	</div>
+	
+
+
+	<div class="nav-bar" style="/*height: 100px;*/">
+		<div class="row">
+			<div class="menu">
+				<div id="line1" class="line"></div>
+				<div id="line3" class="line"></div>
+			</div>
+			
+			<a href="" class="portfolio-logo">Space Creations</a>
+			
+		</div>
+	</div>
+	<div class="overlay">
+		<ul class="navigation">
+			<li class="li-1"><a href="" style="opacity: 1;">Home</a></li>
+			<li class="li-3"><a href="#box3">Work</a></li>
+			<li class="li-2"><a href="#box5">About</a></li>
+			<li class="li-4"><a href="#box6">Contact</a></li>
+		</ul>
+
+		<ul class="contact-detail">
+			<li class="li-1">+91-7568484475</li>
+			<li class="li-2">+91-9589033857</li>
+			<li class="li-3">spacecreations.tech@gmail.com</li>
+			<li class="li-4">Dhanbad, Jharkhand-826004, India</li>
+		</ul>
+
+		
+	</div>
+	
+	
+	<div class="box veryactive" id="box1" style="background-color: white;">
+		<div id="layer" class="layer">
+			<div class="layer-overlay">
+				<span id="agency-info">
+					Hello! <br> We are creative designing agency, passionate about both, designing and developing.
+					<br><br><a class="mr-link" href="#box6">Contact Us</a>
+				</span>
+			</div>
+			<div class="hoverme">
+				<div id="desdev">
+					<img src="img/des-dev.png">
+				</div>
+
+				<img id="circle1" class="circle" src="img/circle1.png">
+				<img id="circle2" class="circle" src="img/circle1.png">
+				<img id="circle3" class="circle" src="img/circle9.png">
+				<img id="circle4" class="circle" src="img/circle9.png">
+				<img id="circle5" class="circle" src="img/circle1.png">
+				<img id="circle6" class="circle" src="img/circle9.png">
+				<img id="circle7" class="circle" src="img/circle9.png">
+				<img id="circle8" class="circle" src="img/circle1.png">
+				<img id="circle9" class="circle" src="img/circle1.png">
+				<img id="circle10" class="circle" src="img/circle1.png">
+				<img id="circle11" class="circle" src="img/circle1.png">
+
+				
+			</div>
+			
+		</div>
+
+		<div id="mob-agency-info" style="display: none; visibility: hidden;">
+				<p>
+					Hello! <br> We are creative designing agency, passionate about both, designing and developing.
+				</p>
+			</div>
+		<div class="servicetag" id="servicetag">
+			<div class="arrow-down"></div>
+			<p>Scroll</p>
+		</div>
+	</div>
+		
+	<div class="box" id="box2" style="overflow: hidden; background: white;">
+		<div class="blue1"></div>
+		<ul class="all-service">
+				<li class="service-list" id="service-li-1">Interactive Websites</li>
+				<li class="service-list" id="service-li-2">Graphic Designs</li>
+				<li class="service-list" id="service-li-3">Logo Design</li>
+				<li class="service-list" id="service-li-4">Branding</li>
+			</ul>
+		<img class="box2IMG" src="img/macbook-and-mobile.png">
+		
+		
+	</div>
+	
+
+	<div class="box" id="box3" style="background: url(img/back-space.jpg); overflow: hidden;">
+		<div class="blue2"></div>
+	
+		<div class="work-block-left work-block-1">
+			<p class="mob-work-block-detail">WillMil is a upcoming social <br> networking platform. <br> I designed its logo.<br><a href="">see more..</a></p>
+			<a class="work-block-link" href="">Explore</a>
+
+		</div>
+		
+		<div class="work-block-right work-block-2">
+			<p class="mob-work-block-detail">Anchal Boutique, <br> a well known boutique in Sikar, Rajashtan. <br> I designed its logo.<br><a href="">see more..</a></p>
+			<a class="work-block-link" href="">Explore</a>
+		</div>	
+		
+			
+	</div>
+
+	<div class="box" id="box4" style="background: url(img/back-space.jpg);; overflow: hidden;">
+
+		<div class="work-block-left work-block-3">
+			<p class="mob-work-block-detail">"The Sweetkarts Project" <br> Designed logo, bussiness cards <br> and all other graphics. <br> See whole project...<br><a href="">see more..</a></p>
+			<a class="work-block-link" href="">Explore</a>
+		</div>
+		
+		<div class="work-block-right work-block-4">
+			<p class="mob-work-block-detail">The ois a new project.<br><a href="">see more..</a></p>
+			<a class="work-block-link" href="">Explore</a>
+		</div>
+		
+		
+			
+	</div>
+
+	
+
+	<div class="box" id="box5" style="z-index: 1; overflow: hidden;">
+			<div class="bg"></div>
+			<img class="planet" src="img/planet_large.png">
+		
+			<img class="my-photo" src="img/astro_book_1.png">
+			<img class="khushal-photo" src="img/astro_lapi_1.png">
+			
+			<ul class="cre-pas-foc">
+				<li id="c">Creative</li>
+				<li id="p">&nbsp;	Passionate</li>
+				<li id="f"> &nbsp; &nbsp;		Focused</li>
+			</ul>
+
+			<p id="my-detail">
+				We are two IIT Dhanbad Graduate, trying to make thing better.<br><br>
+				We work on variety of projects, from interactive websites to
+				branding and graphic designing.
+				<br><br>
+				Our Expertise: Adobe Photoshop, Adobe Illustrator, HTML, CSS, PHP, MySQL, JavaScript, jQuery, java, Adobe Dreamwever, Adobe Muse.
+			</p>
+
+		
+			
+	</div>
+
+	<div class="box" id="box6" style="background: url(img/back-space.jpg);  overflow: hidden;">
+		<div class="blue1"></div>
+		<div class="contact-info">
+			<h1>Do You have a project?</h1>
+			<h3>If you think we colud work well together, then just drop us a message.</h3>	
+		</div>
+
+		<div class="contact-form">
+			 <div class="ui big form">
+				  <div class="fields">
+				    <div class="five wide field">
+				      <label style="color: white;">Name</label>
+				      <input type="text" placeholder="First Name">
+				    </div>
+				    <div class="six wide field">
+				      <label style="color: white;">Email</label>
+				      <input type="email" placeholder="xyz@hurree.com">
+				    </div>
+				    <div class="five wide field">
+				      <label style="color: white;">Phone No.</label>
+				      <input type="text" placeholder="+91....">
+				    </div>
+				  </div>
+				  <div class="field">
+					  <label style="color: white;">Text</label>
+					  <textarea rows="5"></textarea>
+				  </div>
+
+				 <div  class="massive ui submit button">Submit</div>
+				</div>
+
+			</div>
+
+			<div class="phone-info">
+				<h3>Hate forms?<br>Just call or WhatsApp me on and we will gladly chat</h3>
+				<h1>+91-9504404104</h1>	
+			</div>	
+
+			
+	</div>
+
+	<div class="box" id="box7" style="background: url(img/back-space.jpg);  overflow: hidden;">
+		<div class="blue2"></div>
+		
+		<div class="thankyou">
+			
+			<h1>Thank you!</h1>
+			<br>
+			<h3>Also see our work at - <a href="www.behance.net/abhishek-chouhan">behance/abhishek-chouhan</a></h3>	
+		</div>
+		<div class="footer-small">
+			
+
+			<div class="row2" style="width: 100%;">
+				<span>
+				<a href=""><img src="img/facebook.png"></a>
+				<a href=""><img src="img/instagram.png"></a>
+				<a href=""><img src="img/behance.png"></a>
+				</span>
+				<p>+91-7568484475<br>+91-9589033857<br>spacecreations.tech@gmail.com</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		$(document).ready(function(){
+			$('#servicetag').click(function(){
+				$path=$("#box2").offset().top;
+                $('body').animate({scrollTop:$path},500,'swing');
+                $('.veryactive').removeClass('veryactive');
+                $('#box2').addClass('veryactive');
+			});	
+			$('#worktag').click(function(){
+				$path=$("#box3").offset().top;
+                $('body').animate({scrollTop:$path},500,'swing');
+                $('.veryactive').removeClass('veryactive');
+                $('#box3').addClass('veryactive');
+			});
+			$(window).scroll(function() {
+                var wScroll = $(window).scrollTop();
+                console.log(wScroll);
+                if(wScroll>=500){
+                $('#box2 img').animate({'top':'190px', 'opacity': '1'},600);
+                }
+                if(wScroll<1100){
+                	$(".line").removeClass('white');
+                	$(".portfolio-logo").removeClass('white');
+                }
+                if(wScroll<=1040 && wScroll>=640){                                //important
+                	$.Velocity.RunSequence(serviceListLoad);
+                	
+                }
+                if(wScroll<=2000 && wScroll>=1040){                                //important
+                	$.Velocity.RunSequence(workBlockFirstAnimate);
+                	$(".line").addClass('white');
+                	$(".portfolio-logo").addClass('white');
+                }
+                if(wScroll<=2660 && wScroll>=1900){
+                	$.Velocity.RunSequence(workBlockSecondAnimate);
+                	$(".line").addClass('white');
+                	$(".portfolio-logo").addClass('white');
+                }
+                if(wScroll<=3250 && wScroll>=2560){
+                	$.Velocity.RunSequence(workBlockThirdAnimate);
+                	$(".line").addClass('white');
+                	$(".portfolio-logo").addClass('white');
+                }
+                
+                if(wScroll<=4000 && wScroll>=2950){
+                	$.Velocity.RunSequence(crePassFoc);
+                	$(".line").addClass('white');	
+                	$(".portfolio-logo").addClass('white');							
+                }
+
+            })
+               
+        });
+        </script>
+        <script>
+        	var $block1=$('.work-block-1'),
+                $block2=$('.work-block-2'),
+                $block3=$('.work-block-3'),
+                $block4=$('.work-block-4'),
+                $block5=$('.work-block-5'),
+                $block6=$('.work-block-6');
+
+            var workBlockFirstAnimate = [
+	    		{ e: $block1, p: { translateY: -150, opacity: 1 }, o: { delay: 300, duration: 500, easing: "ease-in-out"} },
+		   		{ e: $block2, p: { translateY: -150, opacity: 1 }, o: { delay: 00, duration: 500, easing: "ease-in-out" } }
+		    		
+	  		];
+
+	  		var workBlockSecondAnimate = [
+	    		{ e: $block4, p: { translateY: -150, opacity: 1 }, o: { delay: 300, duration: 500, easing: "ease-in-out"} },
+		   		{ e: $block3, p: { translateY: -150, opacity: 1 }, o: { delay: 150, duration: 500, easing: "ease-in-out" } }
+		    		
+	  		];
+
+	  		var workBlockThirdAnimate = [
+	    		{ e: $block5, p: { translateY: -150, opacity: 1 }, o: { delay: 300, duration: 500, easing: "ease-in-out"} },
+		   		{ e: $block6, p: { translateY: -150, opacity: 1 }, o: { delay: 00, duration: 500, easing: "ease-in-out" } }
+		    		
+	  		];
+
+	  		var $cre = $("#c"),
+    			$pass = $("#p"),
+    			$foc = $("#f");
+
+			var crePassFoc = [
+	    		{ e: $cre, p: { translateY: -150, opacity:1 }, o: { delay: 500, duration: 500, easing: "ease-in-out" } },
+	    		{ e: $pass, p: { translateY: -150, opacity:1 }, o: { duration: 300, easing: "ease-in-out" } },
+	    		{ e: $foc, p: { translateY: -150, opacity:1 }, o: { duration: 300, easing: "ease-in-out" } },
+	    		
+	  		];
+
+	  		
+
+            
+               $(window).keydown(function(e) {
+               		
+
+
+                    var targetElement;
+                    //down
+                    if (e.keyCode == 40 && !$('#box7').hasClass('veryactive')) {
+                        $targetElement = $('.veryactive').next('div');
+                            $('.veryactive').removeClass('veryactive');
+                            $targetElement.addClass('veryactive');
+                            $('html, body').animate({scrollTop: $targetElement.offset().top }, 700);
+                        
+                    }
+                    //up
+                    else if (e.keyCode == 38 && !$('#box1').hasClass('veryactive')) {
+                        $targetElement = $('.veryactive').prev('div');
+                            $('.veryactive').removeClass('veryactive');
+                            $targetElement.addClass('veryactive');
+                            $('html, body').animate({scrollTop: $targetElement.offset().top }, 700);
+
+                            
+                        
+                    }
+
+                    if($('#box2').hasClass('veryactive') )
+                    		$.Velocity.RunSequence(serviceListLoad);
+
+                    if($('#box3').hasClass('veryactive') )
+                    		$.Velocity.RunSequence(workBlockFirstAnimate);
+                   	
+
+                   	if($('#box4').hasClass('veryactive')){
+                    		$.Velocity.RunSequence(workBlockSecondAnimate);
+                   	}
+                   	if($('#box5').hasClass('veryactive')){
+                    		$.Velocity.RunSequence(crePassFoc);
+                   	}
+
+                    
+
+
+
+
+
+                   /* if (!$targetElement.length) {return;}*/
+                    //scroll element into view    
+                });
+        </script>
+
+
+	<script>
+		var $element1 = $(".li-1"),
+    		$element2 = $(".li-2"),
+    		$element3 = $(".li-3");
+    		$element4 = $(".li-4");
+
+		var mySequence = [
+    		{ e: $element1, p: { translateY: 50, opacity:1 }, o: { duration: 300 } },
+    		{ e: $element2, p: { translateY: 50, opacity:1 }, o: { duration: 300 } },
+    		{ e: $element3, p: { translateY: 50, opacity:1 }, o: { duration: 300 } },
+    		{ e: $element4, p: { translateY: 50, opacity:1 }, o: { duration: 300 } }
+    		
+  		];
+
+  		var mySequenceReverse = [
+    		{ e: $element1, p: { translateY: 00, opacity:0 }, o: { delay: 500, duration: 200 } },
+    		{ e: $element2, p: { translateY: 00, opacity:0 }, o: { duration: 200 } },
+    		{ e: $element3, p: { translateY: 00, opacity:0 }, o: { duration: 200 } },
+    		{ e: $element4, p: { translateY: 00, opacity:0 }, o: { duration: 200 } }
+    		
+  		];
+
+  		var serviceListLoad = [
+  			{ e: $('#service-li-1'), p: { translateY: -50, opacity:1 }, o: { delay: 500, duration: 450 }},
+  			{ e: $('#service-li-2'), p: { translateY: -50, opacity:1 }, o: { duration: 450 }},
+  			{ e: $('#service-li-3'), p: { translateY: -50, opacity:1 }, o: { duration: 450 }},
+  			{ e: $('#service-li-4'), p: { translateY: -50, opacity:1 }, o: { duration: 450 }},
+
+  			
+  			
+  		]
+
+
+		$(document).ready(function(){
+			$(window).scroll(function() {
+   				if ($(window).scrollTop() > 50) {
+     		   		$('.nav-bar').addClass('sticky');
+   			 	} else {
+   			    	$('.nav-bar').removeClass('sticky');
+ 			    }
+			});
+
+			$('.menu').click(function(){
+				$('#line1').toggleClass('active');
+				$('#line2').toggleClass('active');
+				$('#line3').toggleClass('active');
+				$('.overlay').toggleClass('active');
+
+				if($('.overlay').hasClass('active'))
+					$.Velocity.RunSequence(mySequence);
+				else
+					$.Velocity.RunSequence(mySequenceReverse);
+
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('#layer').hover(function(){
+				$('.layer-overlay').toggleClass('visible');
+				$('.hoverme').toggleClass('blurit');
+				$('#agency-info').toggleClass('veryvisible');
+			});
+
+			$('.work-block').hover(function(){
+				$('.work-block').toggleClass('blurit');
+
+			})
+		});
+	</script>
+
+	<script>
+		var layer = $('#layer');
+		var desdev = $('#desdev');
+		var circle = $('.circle');
+		var circle1 = $('#circle1');
+		var circle2 = $('#circle2');
+		var circle3 = $('#circle3');
+		var circle4 = $('#circle4');
+		var circle5 = $('#circle5');
+		var circle6 = $('#circle6');
+		var circle7 = $('#circle7');
+		var circle8 = $('#circle8');
+		var circle9 = $('#circle9');
+		var circle10 = $('#circle10');
+		var circle11 = $('#circle11');
+
+		var loadCircles = [
+			{ e: circle1, p: { translateY: 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle2, p: { translateY: 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle3, p: { translateY: 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle4, p: { translateY: -500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle5, p: { translateY: 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle6, p: { translateY:- 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle7, p: { translateY: -500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle8, p: { translateY: -500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle9, p: { translateY: 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle10, p: { translateY: -500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } },
+    		{ e: circle11, p: { translateY: 500, opacity: 1}, o: { duration: 250, easing: [0, 0.2, 0.34, 0.99] } }
+    		
+  		];
+
+        
+  		$(document).ready(function(){
+  			desdev.velocity({
+    			p: { opacity: 1 },
+    			o: { duration: 1500 }
+			});
+			$('.layer').addClass('animate');
+  			$.Velocity.RunSequence(loadCircles);
+  		});
+
+		layer.mousemove(function(e){
+			var valueX =(e.pageX * -1/30);
+			var valueY =(e.pageY * -1/30);
+
+			
+		});
+			
+
+			var lFollowX = 0,
+		    lFollowY = 0,
+		    x = 0,
+		    y = 0,
+		    friction = 1 / 20;
+
+		function movecircle() {
+		  x -= (lFollowX + x) * friction*(0.7);
+		  y -= (lFollowY + y) * friction*(0.7);
+		  
+		  translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+		  circle4.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  circle6.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  circle9.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+
+		  circle1.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  circle5.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  circle7.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(movecircle);
+		}
+		function movecircle2() {
+		  x -= (lFollowX + x) * friction*(1);
+		  y -= (lFollowY + y) * friction*(1);
+		  
+		  translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+		  circle2.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  circle3.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  circle8.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  circle10.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  circle11.css({	  	
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(movecircle2);
+		}
+
+		function movedesdev() {
+		  x -= (lFollowX - x) * friction*0.3;
+		  y -= (lFollowY - y) * friction*0.3;
+		  
+		  translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+		  desdev.css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(movedesdev);
+		}
+
+
+		$(window).on('mousemove click', function(e) {
+
+		  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+		  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+		  lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+		  lFollowY = (e.pageY * -1/30);
+		  //lFollowY = (10 * lMouseY) / 100;
+
+		});
+
+		movedesdev();
+		movecircle();
+		movecircle2();
+		
+		
+	</script>
+
+	<script>
+		
+			var lFollowX = 0,
+		    lFollowY = 0,
+		    x1 = 0,
+		    y1 = 0,
+		    x2 = 0,
+		    y2 = 0,
+		    x3 = 0;
+		    y3 = 0;
+		    friction = 1 / 15;
+
+		function moveBox2BG() {
+		  x1 += (lFollowX - x1) * friction*(0.5);
+	      y1 += (lFollowY - y1) * friction*(0.5);
+		  
+		  translate = 'translate(' + x2 + 'px, ' + y2 + 'px) scale(1.1)';
+
+		  $('.blue1').css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+		  $('.blue2').css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(moveBox2BG);
+		}
+
+		function moveBox2IMG() {
+		  x2 += (lFollowX - x2) * friction*(1);
+		  y2 += (lFollowY - y2) * friction*(1);
+		  
+		  translate = 'translate(' + x2 + 'px, ' + y2 + 'px) scale(1)';
+
+		  $('.box2IMG').css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(moveBox2IMG);
+		}
+
+		function moveBackground() {
+		  x1 += (lFollowX - x1) * friction*(0.5);
+	      y1 += (lFollowY - y1) * friction*(0.5);
+	  
+		  translate = 'translate(' + x1 + 'px, ' + y1 + 'px) scale(1.1)';
+
+		  $('.bg').css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(moveBackground);
+		}
+
+		function moveMyPhoto() {
+		  x2 += (lFollowX - x2) * friction*(0.7);
+		  y2 += (lFollowY - y2) * friction*(0.7);
+		  
+		  translate = 'translate(' + x2 + 'px, ' + y2 + 'px) scale(1.1)';
+
+		  $('.my-photo').css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(moveMyPhoto);
+		}
+		function moveKhushalPhoto() {
+		  x3 += (lFollowX - x3) * friction*(3.5);
+		  y3 += (lFollowY - y3) * friction*(3.5);
+		  
+		  translate = 'translate(' + x3 + 2 + 'px, ' + y3 + 2+ 'px) scale(1.1)';
+
+		  $('.khushal-photo').css({
+		    '-webit-transform': translate,
+		    '-moz-transform': translate,
+		    'transform': translate
+		  });
+
+		  window.requestAnimationFrame(moveKhushalPhoto);
+		}
+
+		$(window).on('mousemove click', function(e) {
+
+		  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+		  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+		  lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+		  lFollowY = (10 * lMouseY) / 100;
+
+		});
+
+		moveBackground();
+		moveMyPhoto();
+		moveBox2BG();
+		moveBox2IMG();
+		moveKhushalPhoto();
+	</script>
+
+	
+
+	
+
+</body>
+
+
+</html>
+
+
+
+
