@@ -1,47 +1,42 @@
 <html>
 <head>
-	<title>SpaceCreations - Design & Develop</title>
-	<meta property="og:title" content="SpaceCreations - Design & Develop" />
-	<meta property="og:image" content="" />
-	<meta name="description" content="We are Creative People, Passionate about : Designing & Developing.We work on variety of projects, from interactive websites to
-				branding and graphic designing.">
-    <meta name="author" content="web development,app development,graphic designing,logo designing,branding kit,branding,android app,development agency,SEO,freelancers for website,website designing,free templates download">
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu:700" rel="stylesheet">
+	<title>SpaceCreations</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/button.css">
 	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/package.js"></script>
 	<script src="js/form.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="js/velocity.min.js"></script>
   	<script scr="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	<script>
 		$(document).ready(function() {
-		//Preloader
-		$(window).on("load",(function() {
-		var preloaderFadeOutTime = 700;
-		function hidePreloader() {
-		var preloader = $('.spinner-wrapper');
-		preloader.fadeOut(preloaderFadeOutTime);
-		}
-		hidePreloader();
-		
-  			
-		}));
+			//Preloader
+			$(window).on("load",(function() {
+				var preloaderFadeOutTime = 700;
+				function hidePreloader() {
+					var preloader = $('.spinner-wrapper');
+					preloader.fadeOut(preloaderFadeOutTime);
+				}
+				hidePreloader();
+				
+		  			
+			}));
 		});
 	</script>
 
 
   	<style>
   		body{
-  			/*font-family: 'Ubuntu', sans-serif;*/
-  			font-family: '', 'sans-serif';
+  			/*font-family: 'Ubuntu', sans-serif;
+  			font-family: 'Fjalla One', sans-serif;*/
+  			font-family: 'Abel', sans-serif;
   		}
 
   		.nav-bar {
@@ -52,7 +47,12 @@
 </head>
 <body>
 	<div class="spinner-wrapper">
-		<h1>Run Towords What you Fear Most</h1>
+		<p>
+			<strong>"Make an empty space in any corner of your mind, and creativity will instantly fill it."</strong>
+			<br>
+			-DEE HOCK, founder CEO of Visa credit card association.
+
+		</p>
 		<div class="spinner"></div>
 	</div>
 	
@@ -64,41 +64,50 @@
 				<div id="line1" class="line"></div>
 				<div id="line3" class="line"></div>
 			</div>
-			
-			<a href="" class="portfolio-logo">Space Creations</a>
-			
+			<div class="portfolio-logo">
+				<img class="logo-gif" src="img/sc-gif-small.gif">
+				<a href=""><strong>Space</strong>Creations</a>
+			</div>
 		</div>
 	</div>
 	<div class="overlay">
 		<ul class="navigation">
-			<li class="li-1"><a href="" style="opacity: 1;">Home</a></li>
-			<li class="li-3"><a href="#box3">Work</a></li>
-			<li class="li-2"><a href="#box5">About</a></li>
-			<li class="li-4"><a href="#box6">Contact</a></li>
+			<li class="li-1"><a id="link1" href="#box1">Intro</a></li>
+			<li class="li-3"><a id="link2" href="#box3">Work</a></li>
+			<li class="li-2"><a id="link3" href="#box5">About</a></li>
+			<li class="li-4"><a id="link4" href="#box6">Contact</a></li>
 		</ul>
 
 		<ul class="contact-detail">
-			<li class="li-1">+91-7568484475</li>
+			<li class="li-1">+91-9504404104</li>
 			<li class="li-2">+91-9589033857</li>
-			<li class="li-3">spacecreations.tech@gmail.com</li>
+			<li class="li-3">chouhanabhi5@gmail.com</li>
 			<li class="li-4">Dhanbad, Jharkhand-826004, India</li>
 		</ul>
 
 		
 	</div>
 	
+	<div class="others">
+		<div class="blue"></div>
+		<div class="dark">
+			
+			
+		</div>		
+	</div>
 	
 	<div class="box veryactive" id="box1" style="background-color: white;">
 		<div id="layer" class="layer">
 			<div class="layer-overlay">
-				<span id="agency-info">
-					Hello! <br> We are Creative People, Passionate about : Designing & Developing.
-					<br><br><a class="mr-link" href="#box6">Contact Us</a>
-				</span>
+				<p id="agency-info">
+					Hello! <br> We are creative designing agency, passionate about both, designing and developing.
+					<br><br>
+				</p>
+				<a class="mr-link" href="#box6">Contact Us</a>
 			</div>
 			<div class="hoverme">
 				<div id="desdev">
-					<img src="img/des-dev.png">
+					<img src="img/des-dev2-min.png">
 				</div>
 
 				<img id="circle1" class="circle" src="img/circle1.png">
@@ -117,6 +126,20 @@
 			</div>
 			
 		</div>
+		<div  class="quote right">
+			<p>
+				"Space is the breath of art."
+				<br>
+				 - Frank Lloyd Wright
+			</p>
+		</div>
+		<div class="quote left">
+			<p>
+				"I would like to die on Mars. Just not on impact." 
+				<br>
+				-Elon Musk
+			</p>
+		</div>
 
 		<div id="mob-agency-info" style="display: none; visibility: hidden;">
 				<p>
@@ -130,45 +153,43 @@
 	</div>
 		
 	<div class="box" id="box2" style="overflow: hidden; background: white;">
-		<div class="blue1"></div>
 		<ul class="all-service">
 				<li class="service-list" id="service-li-1">Interactive Websites</li>
 				<li class="service-list" id="service-li-2">Graphic Designs</li>
 				<li class="service-list" id="service-li-3">Logo Design</li>
 				<li class="service-list" id="service-li-4">Branding</li>
 			</ul>
-		<img class="box2IMG" src="img/macbook-and-mobile.png">
+		<img class="box2IMG" src="img/macbook-and-mobile-min.png">
 		
 		
 	</div>
 	
 
-	<div class="box" id="box3" style="background: url(img/back-space.jpg); overflow: hidden;">
-		<div class="blue2"></div>
-	
+	<div class="box" id="box3" style="background: white; overflow: hidden;">
+		
 		<div class="work-block-left work-block-1">
-			<p class="mob-work-block-detail">WillMil is a upcoming social <br> networking platform. <br> I designed its logo.<br><a href="">see more..</a></p>
+			<p class="work-block-detail"><strong>LOGO DESIGN</strong><br>WillMil is a upcoming social <br> networking platform. <br> I designed its logo.</p>
 			<a class="work-block-link" href="">Explore</a>
 
 		</div>
 		
 		<div class="work-block-right work-block-2">
-			<p class="mob-work-block-detail">Anchal Boutique, <br> a well known boutique in Sikar, Rajashtan. <br> I designed its logo.<br><a href="">see more..</a></p>
+			<p class="work-block-detail"><strong>LOGO DESIGN</strong><br>Anchal Boutique, <br> a well known boutique in Sikar, Rajashtan. <br> I designed its logo.</p>
 			<a class="work-block-link" href="">Explore</a>
 		</div>	
 		
 			
 	</div>
 
-	<div class="box" id="box4" style="background: url(img/back-space.jpg);; overflow: hidden;">
+	<div class="box" id="box4" style="background: white; overflow: hidden;">
 
 		<div class="work-block-left work-block-3">
-			<p class="mob-work-block-detail">"The Sweetkarts Project" <br> Designed logo, bussiness cards <br> and all other graphics. <br> See whole project...<br><a href="">see more..</a></p>
+			<p class="work-block-detail"><strong>BRANDING</strong><br>"The Sweetkarts Project" <br> Designed logo, bussiness cards <br> and all other graphics.</p>
 			<a class="work-block-link" href="">Explore</a>
 		</div>
 		
 		<div class="work-block-right work-block-4">
-			<p class="mob-work-block-detail">The ois a new project.<br><a href="">see more..</a></p>
+			<p class="work-block-detail"><strong>LOGO AND CARD DESIGN</strong><br>M.F.S Kraftastic is a<br> art and craft work shop in Dhanbad.</p>
 			<a class="work-block-link" href="">Explore</a>
 		</div>
 		
@@ -179,12 +200,10 @@
 	
 
 	<div class="box" id="box5" style="z-index: 1; overflow: hidden;">
-			<div class="bg"></div>
 			<img class="planet" src="img/planet_large.png">
-		
-			<img class="my-photo" src="img/astro_book_1.png">
+		    <img class="my-photo" src="img/astro_book_1.png">
 			<img class="khushal-photo" src="img/astro_lapi_1.png">
-			
+
 			<ul class="cre-pas-foc">
 				<li id="c">Creative</li>
 				<li id="p">&nbsp;	Passionate</li>
@@ -203,15 +222,14 @@
 			
 	</div>
 
-	<div class="box" id="box6" style="background: url(img/back-space.jpg);  overflow: hidden;">
-		<div class="blue1"></div>
+	<div class="box" id="box6" style="background: white;  overflow: hidden;">
 		<div class="contact-info">
 			<h1>Do You have a project?</h1>
 			<h3>If you think we colud work well together, then just drop us a message.</h3>	
 		</div>
 
 		<div class="contact-form">
-			 <div class="ui big form">
+			 <div class="ui small form">
 				  <div class="fields">
 				    <div class="five wide field">
 				      <label style="color: white;">Name</label>
@@ -231,7 +249,7 @@
 					  <textarea rows="5"></textarea>
 				  </div>
 
-				 <div  class="massive ui submit button">Submit</div>
+				 <div  class="large ui submit button">Submit</div>
 				</div>
 
 			</div>
@@ -244,25 +262,70 @@
 			
 	</div>
 
-	<div class="box" id="box7" style="background: url(img/back-space.jpg);  overflow: hidden;">
+	<div class="box" id="box7" style="background: white; background: linear-gradient(180deg, transparent, #4e4373);  overflow: hidden;">
 		<div class="blue2"></div>
 		
 		<div class="thankyou">
 			
 			<h1>Thank you!</h1>
 			<br>
-			<h3>Also see our work at - <a href="www.behance.net/abhishek-chouhan">behance/abhishek-chouhan</a></h3>	
-		</div>
-		<div class="footer-small">
-			
 
-			<div class="row2" style="width: 100%;">
+			<div class="comments">
+				<figure>
+					<div class="comment-1">
+						<p>
+							<strong>"You guys are doing amazing work..keep it up. Impressive work."</strong>
+						</p>
+						<p>
+							-Jaswant Rawat, founder WillMill.com
+						</p>
+					</div>
+					<div class="comment-2">
+						<p>
+							<strong>"Love the logo you designed for me. Thank you guys :)"</strong>
+						</p>
+						<p>
+							-Aanchal Bajaj, Owner M.F.S Kraftastic
+						</p>
+					</div>
+					<div class="comment-3">
+						<p>
+							<strong>"You guys are doing amazing work..keep it up. Impressive work."</strong>
+						</p>
+						<p>
+							-Rishi Raj, Co-founder Sweetkarts.com
+						</p>
+					</div>
+					<div class="comment-4">
+						<p>
+							<strong>"Love the elegent logo you designed for me. Thank you."</strong>
+						</p>
+						<p>
+							-Anchal Jain, Owner Anchal Boutique
+						</p>
+					</div>
+					<div class="comment-5">
+						<p>
+							<strong>"This website is so good!!!"</strong>
+						</p>
+						<p>
+							-One of friends.
+						</p>
+					</div>
+				</figure>
+			</div>
+			<h3>Also see our work at</h3>
+			<div class="social">
 				<span>
-				<a href=""><img src="img/facebook.png"></a>
 				<a href=""><img src="img/instagram.png"></a>
 				<a href=""><img src="img/behance.png"></a>
 				</span>
-				<p>+91-7568484475<br>+91-9589033857<br>spacecreations.tech@gmail.com</p>
+			</div>
+		</div>
+		<div class="footer-small">
+			<div class="row2">
+				<img src="img/sc-logo.png">
+				<p>+91-9504404104<br>+91-9589033857<br>chouhanabhi5@gmail.com</p>
 			</div>
 		</div>
 	</div>
@@ -270,27 +333,78 @@
 
 	<script>
 		$(document).ready(function(){
+			   $("#link1").click(function(){
+                    $path=$("#box1").offset().top;
+                    $('body').animate({scrollTop:$path},500,'swing');
+                    $('.active').removeClass('active');
+                    $('#box1').addClass('active');
+                    $('.nav-bar').removeClass('sticky');
+                    $('.logo-gif').removeClass('show');
+                    
+               });
+               $("#link2").click(function(){
+                    $path=$("#box3").offset().top;
+                    $('body').animate({scrollTop:$path},500,'swing');
+                    $('.active').removeClass('active');
+                    $('#box3').addClass('active');
+                    $('.nav-bar').removeClass('sticky');
+                    $('.logo-gif').removeClass('show');
+               });
+               $("#link3").click(function(){
+                    $path=$("#box5").offset().top;
+                    $('body').animate({scrollTop:$path},500,'swing');
+                    $('.active').removeClass('active');
+                    $('#box5').addClass('active');
+                    $('.nav-bar').removeClass('sticky');
+                    $('.logo-gif').removeClass('show');
+               });
+               $("#link4").click(function(){
+                    $path=$("#box6").offset().top;
+                    $('body').animate({scrollTop:$path},500,'swing');
+                    $('.active').removeClass('active');
+                    $('#box6').addClass('active');
+                    $('.nav-bar').removeClass('sticky');
+                    $('.logo-gif').removeClass('show');
+               });
+
+
+
 			$('#servicetag').click(function(){
 				$path=$("#box2").offset().top;
                 $('body').animate({scrollTop:$path},500,'swing');
                 $('.veryactive').removeClass('veryactive');
                 $('#box2').addClass('veryactive');
 			});	
-			$('#worktag').click(function(){
-				$path=$("#box3").offset().top;
-                $('body').animate({scrollTop:$path},500,'swing');
-                $('.veryactive').removeClass('veryactive');
-                $('#box3').addClass('veryactive');
-			});
 			$(window).scroll(function() {
                 var wScroll = $(window).scrollTop();
-                console.log(wScroll);
+                var winWidth = $(window).width();
+                if(winWidth<=500){
+                	if(wScroll>=200){
+	                	$('#box2 img').animate({'top':'190px', 'opacity': '1'},600);
+	                }
+                	if(wScroll<=540 && wScroll>=240){                                //important
+	                	$.Velocity.RunSequence(serviceListLoad);
+	                	
+	                }
+	                if(wScroll<=1000 && wScroll>=540){                                //important
+	                	$.Velocity.RunSequence(workBlockFirstAnimate);
+	                	$(".portfolio-logo").addClass('white');
+	                }
+	                if(wScroll<=1500 && wScroll>=1001){
+	                	$.Velocity.RunSequence(workBlockSecondAnimate);
+	                }
+	                if(wScroll<=2000 && wScroll>=1501){
+	                	$.Velocity.RunSequence(workBlockThirdAnimate);
+	                	
+	                }
+	                
+	                if(wScroll<=2500 && wScroll>=2050){
+	                	$.Velocity.RunSequence(crePassFoc);
+	                							
+	                }
+                }
                 if(wScroll>=500){
                 $('#box2 img').animate({'top':'190px', 'opacity': '1'},600);
-                }
-                if(wScroll<1100){
-                	$(".line").removeClass('white');
-                	$(".portfolio-logo").removeClass('white');
                 }
                 if(wScroll<=1040 && wScroll>=640){                                //important
                 	$.Velocity.RunSequence(serviceListLoad);
@@ -298,24 +412,20 @@
                 }
                 if(wScroll<=2000 && wScroll>=1040){                                //important
                 	$.Velocity.RunSequence(workBlockFirstAnimate);
-                	$(".line").addClass('white');
-                	$(".portfolio-logo").addClass('white');
+                	
                 }
                 if(wScroll<=2660 && wScroll>=1900){
                 	$.Velocity.RunSequence(workBlockSecondAnimate);
-                	$(".line").addClass('white');
-                	$(".portfolio-logo").addClass('white');
+                	
                 }
                 if(wScroll<=3250 && wScroll>=2560){
                 	$.Velocity.RunSequence(workBlockThirdAnimate);
-                	$(".line").addClass('white');
-                	$(".portfolio-logo").addClass('white');
+                	
                 }
                 
-                if(wScroll<=4000 && wScroll>=2950){
+                if(wScroll<=4000 && wScroll>=2650){
                 	$.Velocity.RunSequence(crePassFoc);
-                	$(".line").addClass('white');	
-                	$(".portfolio-logo").addClass('white');							
+                							
                 }
 
             })
@@ -446,20 +556,20 @@
 
 
 		$(document).ready(function(){
-			$(window).scroll(function() {
-   				if ($(window).scrollTop() > 50) {
-     		   		$('.nav-bar').addClass('sticky');
-   			 	} else {
-   			    	$('.nav-bar').removeClass('sticky');
- 			    }
-			});
-
 			$('.menu').click(function(){
 				$('#line1').toggleClass('active');
 				$('#line2').toggleClass('active');
 				$('#line3').toggleClass('active');
 				$('.overlay').toggleClass('active');
 
+				if($('.nav-bar').hasClass('sticky')){
+					$('.logo-gif').removeClass('show');
+					$('.nav-bar').removeClass('sticky');
+				}
+				else{
+					$('.logo-gif').addClass('show');
+					$('.nav-bar').addClass('sticky');
+				}
 				if($('.overlay').hasClass('active'))
 					$.Velocity.RunSequence(mySequence);
 				else

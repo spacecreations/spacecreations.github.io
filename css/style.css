@@ -5,10 +5,28 @@
 
 body {
 	margin: 0;
-	
-	font-family: 'Ubuntu', sans-serif;
 	padding: 0;
-	font-family: 'Playfair Display', serif;
+	
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a.mr-link:before, a.work-block-link:before{
+	position: absolute;
+	top: 0%;
+	left: 0;
+	content: '';
+	display: block;
+	width: 0%;
+	height: 100%;
+	background-color: red;
+	transition: all .3s;
+	opacity: .5;
+}
+a.mr-link:hover:before, a.work-block-link:hover:before{
+	width: 100%;
+	
 }
 
 .spinner-wrapper {
@@ -21,16 +39,15 @@ body {
 			z-index: 999999;
 
 		}
-		.spinner-wrapper h1{
-			font-size: 60px;
+		.spinner-wrapper p{
+			font-size: 25px;
 			color: white;
 			width: 100%;
 			justify-content: center;
-			font-weight: 700;
 			position: absolute;
 			top: 60%;
 			text-align: center;
-			padding: 0 20% 0 20%;
+			
 			
 
 		}
@@ -85,7 +102,8 @@ a {
 }
 .nav-bar.sticky {
 	position: fixed;
-	background-color: ;
+	background-color: white;
+	height: 100px;
 	/*border-bottom: 1px solid #222;*/
 }
 .row {
@@ -93,14 +111,29 @@ a {
 	top: 10px;
 	height: 50px;
 }
-.row .portfolio-logo {
+.row .portfolio-logo{
 	float: left;
 	width: auto;
 	margin-left: 100px;
+	
+}
+.row .portfolio-logo a {
 	text-decoration: none;
 	font-size: 26px;
 	color: black;
-	font-weight: 600;
+	
+}
+.row .portfolio-logo .logo-gif {
+	opacity: 0;
+	position: absolute;
+	z-index: 30;
+	top: -20;
+    left: 60;
+    width: 50;
+	transition: all .5s ease;
+}
+.row .portfolio-logo .logo-gif.show {
+	opacity: 1;
 }
 .portfolio-logo.white{
 	color: white !important;
@@ -136,9 +169,7 @@ a {
 	border-radius: 8px;
 	transition: all .2s cubic-bezier(0.25, 0.1, 0.07, 1.71);
 }
-.line.white{
-	background-color: white !important;
-}
+
 #line1 {
 	top: 1%;
 }
@@ -189,31 +220,36 @@ a {
 	position: relative;
 	text-align: right;
 	list-style-type: none;
-	color: white;
 	opacity: 0;
 	line-height: 100px;
-	font-size: 55px;
 	margin-left: 10%;
 	margin-right: 10%;
 	border-bottom: 1px solid #525050;
 	transition: all .5s ease;
 }
-.overlay .navigation li a:hover{
-	opacity: .6;
-	text-decoration: none;
-	transition: all 1s ease;
-}
-.overlay .navigation li:before {
+.overlay .navigation li a{
 	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	content: '';
-	background-color: #fff;
-	opacity: 0.3;
-	transition: all .3s ease;
+	font-size: 55px;
+	color: white;
+	
 }
+.overlay .navigation li a:before{
+	position: absolute;
+	z-index: 25;
+    top: 45%;
+    float: right;
+    left: 0;
+  	width: 0%;
+  	height: 8px;
+  	background-color: darkcyan;
+  	content: '';
+    display: block; 
+    transition: all 0.3s;
+}
+.overlay .navigation li a:hover:before{
+	width: 100%;
+}
+
 .overlay .navigation li:hover:before {
 	height: 100%;
 }
@@ -268,8 +304,8 @@ a {
 	  position: relative;
 	  margin-left: 20px;
 	  margin-bottom: 10px;
-	  width:15px;
-	  height:15px;
+	  width:10px;
+	  height:10px;
 	  background-color: transparent;
 	  border-left: 1px solid black;
 	  border-top: 1px solid black;
@@ -316,11 +352,11 @@ a {
 	width: 150%;
 	height: 100%;
 	transition: all 2s ease-in-out;
-	animation: slowzoom 25s infinite;
+	animation: slowzo 25s infinite;
 	background-size:;
 	background-position: top;
 	background-color: blue;
-	background: url(../img/gabriel.jpg) no-repeat;
+	background: url(../img/gradient.jpg) no-repeat;
 	transition:all .4s ease-in-out;
 }
 #layer .layer-overlay{
@@ -334,7 +370,7 @@ a {
 	opacity: 0;
 	transition: all 2s ease-in-out;
 	text-align: center;
-	padding: 12% 10% 0 10%;
+	padding-top: 15%;
 	justify-content: center;
 }
 #layer .layer-overlay.visible{
@@ -403,6 +439,8 @@ a {
 }
 
 .mr-link {
+	position: relative;
+	z-index: 24;
 	background-color: blue;
     padding: 15 40 15 40;
     font-size: 18px;
@@ -507,16 +545,24 @@ a {
     left: 38%;
     width: 7%;
 }
+.quote{
+	position: absolute;
+	z-index: 20;
+	font-size: 14px;
+	top: 50%;
+	text-align: center;
+	letter-spacing: 2px;
 
-.carousel-caption h3{
-	font-size: 55px; 
 }
-.carousel-caption{
-		top: 20%;
+.quote.right{
+    transform: rotate(90deg);
+    right: -25px;
 }
-.carousel-caption p{
-	font-size: 20px;
+.quote.left{
+	transform: rotate(-90deg);
+	left: -110px
 }
+
 #my-detail::before{
 	content: '';
 	display: block;
@@ -537,102 +583,44 @@ a {
 	height: 100vh;
 
 }
-#box2 .blue1 {
+.blue {
 	position: absolute;
-	width: 100%;
-	height: 95%;
-	z-index: 0;
+    top: 1000px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transform: skewY(-10deg);
+    -webkit-transform: skewY(-10deg);
+	  -moz-transform: skewY(-10deg);
+	  -ms-transform: skewY(-10deg);
+	  -o-transform: skewY(-10deg);
+    background: url(../img/gradient.jpg);
+    z-index: 7;
 }
-#box2 .blue1:before{
+.dark {
+	position: absolute;
+	top: 2000px;
+    width: 100%;
+    height: 300vh;
+    overflow: hidden;
+    z-index: 1;
+}
+.dark:before {
 	content: '';
 	display: block;
 	position: absolute;
-	top: 50%;
-	height: 100%;
+	top: 350px;
 	width: 100%;
-	  background: blue;
-	  z-index: -1;
-	  -webkit-transform: skewY(-20deg);
-	  -moz-transform: skewY(-20deg);
-	  -ms-transform: skewY(-20deg);
-	  -o-transform: skewY(-20deg);
-	  transform: skewY(-20deg);
-	  -webkit-backface-visibility: hidden;
-	  backface-visibility: initial;
+    height: 65%;
+    transform: skewY(-10deg);
+    -webkit-transform: skewY(-10deg);
+	  -moz-transform: skewY(-10deg);
+	  -ms-transform: skewY(-10deg);
+	  -o-transform: skewY(-10deg);
+    background: url(../img/dark-gradient.jpg) no-repeat center center;
+    background-size: cover;
+}
 
-}
-#box3 .blue2 {
-	position: absolute;
-	width: 100%;
-	height: 95%;
-	z-index: 10;
-}
-#box3 .blue2:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: -100%;
-	height: 150%;
-	width: 100%;
-	  background: blue;
-	  z-index: -1;
-	  -webkit-transform: skewY(-20deg);
-	  -moz-transform: skewY(-20deg);
-	  -ms-transform: skewY(-20deg);
-	  -o-transform: skewY(-20deg);
-	  transform: skewY(-20deg);
-	  -webkit-backface-visibility: hidden;
-	  backface-visibility: initial;
-
-}
-#box6 .blue1 {
-	position: absolute;
-	width: 100%;
-	height: 95%;
-	z-index: 0;
-}
-#box6 .blue1:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 50%;
-	height: 100%;
-	width: 100%;
-	  background: blue;
-	  z-index: -1;
-	  -webkit-transform: skewY(20deg);
-	  -moz-transform: skewY(20deg);
-	  -ms-transform: skewY(20deg);
-	  -o-transform: skewY(20deg);
-	  transform: skewY(20deg);
-	  -webkit-backface-visibility: hidden;
-	  backface-visibility: initial;
-
-}
-#box7 .blue2 {
-	position: absolute;
-	width: 100%;
-	height: 95%;
-	z-index: 10;
-}
-#box7 .blue2:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: -100%;
-	height: 150%;
-	width: 100%;
-	  background: blue;
-	  z-index: -1;
-	  -webkit-transform: skewY(20deg);
-	  -moz-transform: skewY(20deg);
-	  -ms-transform: skewY(20deg);
-	  -o-transform: skewY(20deg);
-	  transform: skewY(20deg);
-	  -webkit-backface-visibility: hidden;
-	  backface-visibility: initial;
-
-}
 .all-service {
 	list-style-type: none;
 	position: relative;
@@ -705,6 +693,7 @@ a {
 	height: 430px;
 	transition: all 1s ease;
 	opacity: 0;
+	box-shadow: 3px 3px 7px 0px #616159;
 }
 .work-block-right{
 	position: relative;
@@ -715,31 +704,32 @@ a {
 	height: 430px;
 	transition: all 1s ease;
 	opacity: 0;
+	box-shadow: 3px 3px 7px 0px #616159;
 }
 
 .work-block-1{
 	background: url(../img/willmil2.jpg); 
 	float: left; 
-	background-position: center; 
-	background-size: 850px;
+	background-position: center;
+	background-size: cover; 
 }
 .work-block-2{
 	background: url(../img/anchalboutique.jpg);
 	float: right;
 	background-position: center;
-	background-size: 850px;
+	background-size: cover;
 }
 .work-block-3 {
 	background: url(../img/sweetkarts.jpg);
 	float: left;
 	background-position: center;
-	background-size: 850px;
+	background-size: cover;
 }
 .work-block-4 {
-	background: url(../img/fluidblend.jpg);
+	background: url(../img/mfs-card.jpg);
 	float: right;
 	background-position: center;
-	background-size: 550px;
+	background-size: cover;
 }
 .work-block-5{
 	margin-top: 15%;
@@ -754,76 +744,43 @@ a {
 	text-align: left;
 	color: white;
 }
-.work-block:hover{
-	background-size: 950px !important;
-}
 .work-block-link {
-	background-color: tomato;
-    padding: 15 40 15 40;
+	background-color: #222;
+    padding: 10% 10% 10% 10%;
     position: absolute;
-    margin-top: 20px;
-    margin-left: 150px;
+    z-index: 25;
+    bottom: 0;
+    right: 0;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
-
-.work-block-1:before{
-	content: 'LOGO DESIGN \A \A WillMil is a upcoming social \A networking platform. \A I designed its logo.';
-	white-space:pre;
-	padding-top: 70%;
-	padding-left: 5%;
-	display: block;
-	font-size: 16px;
+.work-block-link:hover{
+	text-decoration: underline;
 	color: white;
-	text-align: left;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	
-	
 }
-.work-block-2:before{
-	content: 'LOGO DESIGN \A \A Anchal Boutique, \A a well known boutique in Sikar, Rajashtan. \A I designed its logo.';
-	white-space:pre;
-	padding-top: 70%;
-	padding-left: 5%;
 
+
+.work-block-left:before, .work-block-right:before{
+	content: '';
+	background: linear-gradient(180deg, transparent, white);
 	display: block;
-	font-size: 16px;
-	color: white;
-	text-align: left;
 	position: relative;
 	width: 100%;
 	height: 100%;
+	opacity: .5;
 	
-	opacity: .8;
 }
-.work-block-3:before{
-	content: ' BRANDING PROJECT \A \A  "The Sweetkarts" \A Redesigned logo, bussiness cards \A and all other graphics.';
-	white-space:pre;
-	padding-top: 70%;
-	padding-left: 5%;
-	display: block;
-	font-size: 16px;
-	color: black;
-	text-align: left;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	opacity: .8;
-}
-.work-block-4:before{
+.work-block-detail{
+	position: absolute;
+	z-index: 25;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
 
-}
-
-.mob-work-block-detail{
-	visibility: hidden;
-	display: none;
 }
 .bg {
-	background: url(../img/back-space.jpg);
+	background: url(../img/dark-gradient.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform: scale(1);
@@ -836,9 +793,9 @@ a {
 }
 .planet{
 	position: absolute;
-	top: -20%;
-	left: -20%;
-	width: 45%;
+	top: 0%;
+	left: -10%;
+	width: 35%;
 	z-index: 3;
 }
 
@@ -860,7 +817,7 @@ a {
 #my-detail{
 	position: relative;
 	top: 40%;
-	width: 40%;
+	width: 35%;
 	margin-right: 55%;
 	margin-left: 5%;
 	color: white;
@@ -887,6 +844,7 @@ a {
 
 .contact-info{
 	position: relative;
+	z-index: 15;
 	margin-top: 100px;
 	width: 100%; 
     height: auto; 
@@ -904,6 +862,8 @@ a {
 }
 .contact-form {
 	position: relative;
+	z-index: 15;
+	margin-top: 20px;
 	width: 60%;
 	margin-left: 20%;
 	margin-right: 20%; 
@@ -911,7 +871,9 @@ a {
 	text-align: center;
 }
 .phone-info{
+	z-index: 15;
 	position: relative;
+	margin-top: 30px;
 	width: 100%; 
 	height: auto; 
 	text-align: center; 
@@ -930,206 +892,103 @@ a {
 
 .thankyou{
 	position: relative;
-	top: 100px; 
+	top: 120px; 
 	width: 100%; 
 	height: 75%; 
-	top: 100px; 
-	text-align: center; color: white;
+	text-align: center;
+	color: black;
 	z-index: 10;
 }
+.comments{
+	position: relative;
+	height: auto;
+	padding: 40px 0 40px 0;
+	z-index: 12;
+	overflow: hidden;
+}
+.comments figure{
+	position: relative;
+	width: 500%;
+	left: 0;
+	animation: comment 35s linear infinite;
+}
+@keyframes comment{
+	0% { left: 0 }
+	10% { left: 0% }
+	12%{ left: -100% }
+	22%{ left: -100% }
+	24%{ left: -200% }
+	34%{ left: -200% }
+	36%{ left: -300% }
+	46%{ left: -300% }
+	48%{ left: -400% }
+	58%{ left: -400% }
+	60%{ left: -300% }
+	70%{ left: -300% }
+	72%{ left: -200% }
+	82%{ left: -200% }
+	84%{ left: -100% }
+	94%{ left: -100% }
+	96%{ left: 0% }
+}
+.comments figure div{
+	position: relative;
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.comments figure div p{
+	font-size: 25px;
+	padding: 0 20px;
+	color: black;
+}
 .thankyou h1{
-	font-size: 60px; font-weight: 600;
+	font-size: 60px;
+	font-weight: 600;
 }
 .thankyou h3{
-	font-size: 30px; font-weight: 600;
+	font-size: 20px;
+	font-weight: 600;
+	color: white
+}
+.social {
+	position: relative;
+	margin: 10px;
+}
+.social span a img{
+	position: relative;
+	margin: 10px;
+	width: 60px;
+
 }
 
 
-.service .col.one, .service .col.two, .service .col.three {
-	position: relative;
-	height: 100%;
-	width: 30%;
-	float: left;
-	margin-right: 5%;
-}
-.service .col.three{
-	position: relative;
-	height: 100%;
-	width: 30%;
-	margin-right: 0%;
-}
-.service .col.one .block-one, .service .col.one .block-two{
-	background-color: grey;
-	position: relative;
-	width: 100%;
-	height: 45%;
-	margin-bottom: 7%;
-	overflow: hidden;
-}
-.service .col.one .block-one{
-	background: url(../img/willmilfinal.jpg);
-	background-size: cover;
-	background-position: center;;
-}
-.service .col.one .block-two{
-	margin-bottom: 0;
-}
-.service .col.two .block-three{
-	overflow: hidden;
-	background-color: grey;
-	position: relative;
-	width: 100%;
-	height: 95%;
-}
-.service .col.three .block-four{
-	overflow: hidden;
-	background-color: grey;
-	position: relative;
-	width: 100%;
-	height: 95%;
-}
-.service .col.one .block-one::before, .service .col.one .block-two::before, .service .col.two .block-three::before, .service .col.three .block-four::before{
-	content: '';
-	display: block;
-	justify-content: center;
-	position: relative;
-	top: 70%;
-	width: 100%;
-	height: 100%;
-	opacity: .3;
-	background-color: #222;
-	transition:all .4s ease;
-}
-.service .col.three .block-four::before, .service .col.two .block-three::before{
-	top: 75%;
-	opacity: .4;
-	transition: all .4s ease;
-	height: 50%;
-}
-.service .col.three .block-four:hover::before, .service .col.two .block-three:hover::before{
-	top: 50%;
-	cursor: pointer;
-}
-.service .col.one .block-one:hover::before, .service .col.one .block-two:hover::before{
-	top: 0;
-	cursor: pointer;
-}
-.block-one .information, .block-two .information, .block-three .information, .block-four .information{
-	top: 70%;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	color: white;
-	transition: all .4s ease;
-	text-align: center;
-	justify-content: center;
-}
-.information:hover{
-	top:0;
-}
-.block-three .information, .block-four .information{
-	top: 85%;
-}
-.block-three .information:hover, .block-four .information:hover{
-	top: 50%;
-}
 
 .footer-small{
 	position: absolute;
 	top: 75%;
 	width: 100%;
-	background-color: #222;
 	height:  25%;
 	z-index: 20;
 }
 .footer-small .row2{
 	position: relative;
-	padding:5%;
+	padding: 5% 5%;
 	width: 90%;
 }
-.footer-small .row2 span {
+.footer-small .row2 img{
 	float: left;
-}
-.footer-small .row2 span img{
-	width: 40px;
 	margin-right: 10px;
-	opacity: .6;
+	width: 90px;
 }
 .footer-small .row2 p {
-	color: aqua;
+	color: white;
 	float: right;
-	font-size: 15px;
+	font-size: 16px;
 	justify-content: right;
 	text-align:right;
 }
-.footer{
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	top: 0%;
-	background-color: #222;
-	height: 450px;
-}
-.footer #drawn-arrow{
-	position: absolute;
-	top: 45%;
-	left: 70%;
-	opacity: .4;
-}
-.footer h3{
-	position: absolute;
-	top: 35%;
-	left: 65%;
-	opacity: .4;
-	color: white;
-	font-size: 20px;
-}
-.footer .footer-buttons {
-	position: relative;
-	top: 40%;
-	right: 80px;
-	width: 300px;
-	float: right;
-	justify-content: right;
-	align-content: right;
-	align-items: right;
-	text-align: right;
-}
-.footer .row1{
-	position: relative;
-	top: 10%;
-	padding: 5%;
-	width: 90%;
-	color: white;
-	
-}
-.footer .row1 a{
-	float: right;
-}
-.footer #logo {
-	position: absolute;
-	float: left;
-}
-.footer .row2{
-	position: relative;
-	padding:5%;
-	width: 90%;
-}
-.footer .row2 span {
-	float: left;
-}
-.footer .row2 span img{
-	width: 40px;
-	margin-right: 10px;
-	opacity: .6;
-}
-.footer .row2 p {
-	color: aqua;
-	float: right;
-	font-size: 15px;
-	justify-content: right;
-	text-align:right;
-}
+
 label{
 	color: white;
 }
@@ -1317,7 +1176,7 @@ label{
 		font-size: 40px; font-weight: 600;
 	}
 	.thankyou h3{
-		font-size: 30px; font-family: '';
+		font-size: 30px;
 	}
 }
 
@@ -1348,6 +1207,10 @@ label{
 		margin-right: 5%;
 		height: 300px;
 		
+	}
+	.quote{
+		font-size: 12;
+		letter-spacing: 0;
 	}
 
 	#desdev{
@@ -1521,7 +1384,7 @@ label{
 		font-size: 30px; font-weight: 600;
 	}
 	.thankyou h3{
-		font-size: 20px; font-family: '';
+		font-size: 20px;
 	}
 	.servicetag{
 		bottom: 10px;
@@ -1636,20 +1499,11 @@ label{
     	margin-top: 0px !important;
     	margin-bottom: 0px !important;
 	}
-
-	.spinner-wrapper h1{
-			font-size: 20px;
-			color: white;
-			width: 100%;
-			justify-content: center;
-			font-weight: 700;
-			position: absolute;
-			top: 60%;
-			text-align: center;
-			padding: 0 20% 0 20%;
-			
-
-		}
+	.spinner-wrapper {
+		display: none !important;
+		visibility: hidden !important;
+	}
+	
 
 	.nav-bar{
 		height: 60px !important;
@@ -1664,9 +1518,19 @@ label{
 		width: 50%
 
 	}
+	.row .menu {
+		margin-right: 20px;
+	}
 	.row .portfolio-logo {
-		margin-left: 50px;
+		margin-left: 40px;
+	}
+	.row .portfolio-logo a{
 		font-size: 20;
+	}
+	.row .portfolio-logo .logo-gif{
+		left: 5;
+	    width: 35;
+	    top: -5;		
 	}
 
 	.overlay {
@@ -1690,7 +1554,7 @@ label{
 		height: 500px;
 	}
 	#box3{
-		height: 500px;
+		height: 600px;
 	}
 	#box6{
 		height: 700px;
@@ -1701,6 +1565,9 @@ label{
 		top: 55%;
 		z-index: 20;
 		width: 50%;
+	}
+	.dark{
+		top: 1800px;
 	}
 
 	#layer {
@@ -1714,11 +1581,18 @@ label{
 		display: none;
 		visibility: hidden;
 	}
+	#layer .hoverme.blurit{
+		filter: blur(0px);
+	}
 	#desdev {
 		margin-top: 100px;
 		top: 15%;
 		transition: none;
 		
+	}
+	.quote{
+		display: none;
+		visibility: none;
 	}
 	#mob-agency-info{
 		visibility: visible !important;
@@ -1734,7 +1608,6 @@ label{
 		 color: black;
 	}
 	.planet{
-		top: 30px;
 		left: 0px;
 	}
 	.my-photo{
@@ -1742,11 +1615,11 @@ label{
 		width: 30%;
 	}
 	.khushal-photo{
-		width: 70%;
+		width: 60%;
 		top: 50px;
 	}
 	#my-detail{
-		top: 65%;
+		top: 75%;
 		width: 80%;
 		margin-right: 10%;
 		margin-left: 10%;
@@ -1755,12 +1628,12 @@ label{
 		padding: 5px;
 	}
 	.cre-pas-foc{
-		left: 40%; 
+		left: 30%; 
 		bottom: 40%; 
 		z-index: 2;
 		transform: rotate(-90deg); 
 		font-size: 40px;
-		line-height: 30px;
+		line-height: 40px;
 		list-style: none;
 		color: grey;
 		letter-spacing: 5px;
@@ -1771,14 +1644,16 @@ label{
 	.all-service {
 		font-size: 20px;
 		top: 80px;
+		letter-spacing: 2px;
 	}
 	#service-li-1:after{
 		content: 'Responsive Web Applications / SEO';
 		display: block;
 		margin-top: -10px;
-		font-size: 12px;
+		font-size: 16px;
+		letter-spacing: initial;
 		font-weight: 400;
-		line-height: 25px;
+		line-height: 35px;
 		position: relative;
 		width: 100%;
 	}
@@ -1786,19 +1661,21 @@ label{
 		content: 'Illustations, Posters and all form of graphic design';
 		display: block;
 		margin-top: -10px;
-		font-size: 12px;
+		font-size: 16px;
+		letter-spacing: initial;
 		font-weight: 400;
-		line-height: 25px;
+		line-height: 35px;
 		position: relative;
 		width: 100%;
 	}
 	#service-li-3:after{
-		content: 'Symbol/Icon/Emblem/WordMark and Combinations';
+		content: 'Symbol/Icon/Emblem/WordMark';
 		display: block;
 		margin-top: -10px;
-		font-size: 12px;
+		font-size: 16px;
+		letter-spacing: initial;
 		font-weight: 400;
-		line-height: 25px;
+		line-height: 35px;
 		position: relative;
 		width: 100%;
 	}
@@ -1806,9 +1683,10 @@ label{
 		content: 'Creating Brand Identity';
 		display: block;
 		margin-top: -10px;
-		font-size: 12px;
+		font-size: 16px;
+		letter-spacing: initial;
 		font-weight: 400;
-		line-height: 25px;
+		line-height: 35px;
 		position: relative;
 		width: 100%;
 	}
@@ -1817,62 +1695,25 @@ label{
 		height: 150px;
 		top: 10%;
 		margin-top: 30%;
-		margin-left: 10%;
+		margin-left: 20%;
 	}
 	.work-block-right {
 		width: 60%;
 		height: 150px;
 		top: 12%;
 		margin-top: 30%;
-		margin-right: 30%;
-	}
-	.work-block-1{
-		background-size: 300px;
-	}
-	.work-block-2{
-		background-size: 300px;
-	}
-	.work-block-3{
-		background-size: 300px;
-	}
-	.work-block-4{
-		background-size: 300px;
-	}
-	.work-block-6 h1{
-		font-size: 20px;
-	}
-	.work-block-6 p{
-		font-size: 12px;
-	}
-	.work-block-1:before{
-		content: '';
-		display: none;
-	}
-	.work-block-2:before{
-		content: '';
-		display: none;
-	}
-	.work-block-3:before{
-		content: '';
-		display: none;
-	}
-	.work-block-4:before{
-		content: '';
-		display: none;
+		margin-right: 20%;
 	}
 	
-	.mob-work-block-detail{
-		visibility: visible;
-		display: block;
+	.work-block-detail{
 		position: relative;
 		z-index: 11;
 		top: 110%;
 		width: 100%;
 		padding-left: 10%;
 		padding-right: 10%;
-		color: white;
 		text-align: center;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.contact-info{
@@ -1931,7 +1772,7 @@ label{
 		font-size: 20px; font-weight: 600;
 	}
 	.thankyou h3{
-		font-size: 18px; font-family: '';
+		font-size: 18px;
 	}
 
 	.service{
