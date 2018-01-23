@@ -632,6 +632,12 @@ a {
 	font-weight: 700;
 	color: black;
 	letter-spacing: 5px;
+	animation: colorChange2 7s infinite linear;
+}
+@keyframes colorChange2{
+	0% { color: #fe7c7c; }
+	50% { color: #231212 }
+	100% { color: #fe7c7c }
 }
 #service-li-1:after{
 	content: 'Responsive Web Applications / SEO';
@@ -768,7 +774,7 @@ a {
 	position: relative;
 	width: 100%;
 	height: 40%;
-	top:60%;
+	top: 60%;
 	opacity: .8;
 	
 }
@@ -801,19 +807,19 @@ a {
 }
 
 .my-photo{
-	position: absolute;
-	top: -10%;
-	right: 30%;
-	width: 15%;
-	z-index: 5;
+	    position: absolute;
+    top: -5%;
+    right: 50%;
+    width: 15%;
+    z-index: 5;
 }
 .khushal-photo{
 	position: absolute;
-	top: 0;
-	transform: rotate(-10deg);
-	right: 0%;
-	width: 35%;
-	z-index: 8;
+    top: 0%;
+    transform: rotate(-10deg);
+    right: 15%;
+    width: 35%;
+    z-index: 8;
 }
 #my-detail{
 	position: relative;
@@ -828,17 +834,25 @@ a {
 }
 .cre-pas-foc{
 	position: absolute;
-	left: 45%; 
-	bottom: 28%; 
-	z-index: 2;
-	transform: rotate(-90deg); 
-	font-size: 120px; 
-	font-weight: 700;
-	line-height: 100px;
-	list-style: none;
-	color: white;
-	letter-spacing: 5px;
+    left: 53%;
+    bottom: 18%;
+    z-index: 2;
+    /* transform: rotate(-90deg); */
+    font-size: 120px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 100px;
+    list-style: none;
+    color: white;
+    letter-spacing: 5px;
+    animation: colorChange 7s infinite linear;
 }
+@keyframes colorChange{
+	0% { color: #4e4d4d }
+	50% { color: #171717 }
+	100% { color: #4e4d4d }
+}
+
 .cre-pas-foc li {
 	opacity: 0;
 } 
@@ -851,6 +865,12 @@ a {
     height: auto; 
     text-align: center;
 	color: white;
+	animation: colorChange3 7s infinite linear;
+}
+@keyframes colorChange3{
+	0% { color: #d2cfcf }
+	50% { color: #272626 }
+	100% { color: #d2cfcf }
 }
 .contact-info h1{
 	font-size: 60px; 
@@ -878,15 +898,15 @@ a {
 	width: 100%; 
 	height: auto; 
 	text-align: center; 
-	color: black;
+	color: #222;
 }
 .phone-info h1{
-	font-size: 25px; 
+	font-size: 30px; 
 	
 	font-weight: 600;
 }
 .phone-info h3{
- 	font-size: 35px; 
+ 	font-size: 25px; 
  	
  	font-weight: 600;
 }
@@ -899,6 +919,7 @@ a {
 	text-align: center;
 	color: black;
 	z-index: 10;
+	animation: colorChange2 7s infinite linear;
 }
 .comments{
 	position: relative;
@@ -912,6 +933,7 @@ a {
 	width: 500%;
 	left: 0;
 	animation: comment 35s linear infinite;
+	-webkit-animation: comment 35s linear infinite;
 }
 @keyframes comment{
 	0% { left: 0 }
@@ -941,7 +963,7 @@ a {
 .comments figure div p{
 	font-size: 25px;
 	padding: 0 20px;
-	color: black;
+	color: #222;
 }
 .thankyou h1{
 	font-size: 60px;
@@ -1085,6 +1107,7 @@ label{
 	} 
 	.all-service {
 		font-size: 60px;
+
 	}
 	.work-block-left {
 		width: 35%;
@@ -1557,6 +1580,9 @@ label{
 	#box3{
 		height: 600px;
 	}
+	#box5{
+		height: 600px;
+	}
 	#box6{
 		height: 700px;
 	}
@@ -1625,13 +1651,13 @@ label{
 		margin-right: 10%;
 		margin-left: 10%;
 		color: white;
-		font-size: 12px;
+		font-size: 14px;
 		padding: 5px;
 	}
 	.cre-pas-foc{
-		left: 30%; 
+		left: 50%; 
 		bottom: 40%; 
-		z-index: 2;
+		z-index: 4;
 		transform: rotate(-90deg); 
 		font-size: 40px;
 		line-height: 40px;
@@ -1647,6 +1673,7 @@ label{
 		top: 80px;
 		letter-spacing: 2px;
 	}
+	
 	#service-li-1:after{
 		content: 'Responsive Web Applications / SEO';
 		display: block;
@@ -1719,7 +1746,8 @@ label{
 
 	.contact-info{
 		position: relative;
-		width: 100%; 
+		margin: 50 5% 0 5%;
+		width: 90%;  
 	    height: auto; 
 	    text-align: center;
 		color: white;
@@ -1727,6 +1755,7 @@ label{
 	.contact-info h1{
 		font-size: 20px; 
 		font-weight: 600;
+
 	}
 	.contact-info h3{
 		font-size: 16px; 
@@ -1744,8 +1773,8 @@ label{
 	}
 	.phone-info{
 		position: relative;
-		margin-top: 50px;
-		width: 100%; 
+		margin: 50 5% 0 5%;
+		width: 90%; 
 		height: auto; 
 		text-align: center; 
 		color: black;
@@ -1770,10 +1799,23 @@ label{
 		z-index: 10;
 	}
 	.thankyou h1{
-		font-size: 20px; font-weight: 600;
+		font-size: 30px; 
+		font-weight: 600;
 	}
 	.thankyou h3{
 		font-size: 18px;
+	}
+	.comments figure div p{
+		font-size: 20;
+	}
+	.footer-small{
+		top: 82%;
+	}
+	.footer-small .row2 img{
+		width: 60px;
+	}
+	.footer-small .row2 p{
+		font-size: 14;
 	}
 
 	.service{
@@ -1787,108 +1829,10 @@ label{
 		display: none !important;
 		top: 100%;
 	}
-	#worktag{
-		top: -15% !important;
-	}
-	.service .col.one, .service .col.two, .service .col.three{
-		height: 60%;
-	}
-	.carousel-caption{
-		top: 5%;
-	}
-	.carousel-caption h3{
-		font-size: 20px;
-	}
-	.carousel-caption p{
-		font-size: 10px;
-	}
-	.information h3{
-		font-size: 10px;
-	}
-	.footer{
-		height: 250px;
-	}
-	.footer .row1 #logo{
-		width: 50%;
-	}
-	.footer .row1 a{
-		width: 70px;
-	}
 	button{
 		font-size: 10px !important;
-	}
-	.footer .row2 span img {
-    width: 30px;
-	}
-    /****************ABOUT**********************/
-    .detail{
-    	top: 250px !important;
-    	width: 85% !important;
-    	left: 0 !important;
-    }
-
-    /*****************WORK*********************/
-    .button-container{
-	    top: 500px !important;
-	    width: 90% !important;
-	    justify-content: center;
-	    align-items: center;
-	    height: 50px !important;
-	    left: 3% !important;
-	    float: right;
-	    align-content: center;
-	    margin-left: auto;
-	    margin-right: auto;
-    }
-    .button-container #button-pre{
-    	float: left;
-    }
-    .button-container #button-next{
-    	float: right;
-    }
-    .page-slider .project-detail{
-    	width: 90% !important;
-    	top: 50% !important;
-    	float: none !important;
-    	text-align: center;
-    	justify-content: center;
-    }
-    .page-slider img{
-    	position: absolute;
-    	left: 0;
-    	width: 100% !important;
-    	margin-top: -5%;
-    }
-    .project-button{
-    	top: 400px !important;
-    }
+	
     
-    /************CONTACT******************/
-    .container{
-    	background-repeat: no-repeat;
-    	background-size: cover !important;
-    	height: 170% !important;
-    }
-    .details{
-    	height: 700px !important;
-    }
-    .form-detail{
-    	width: 90% !important;
-    	justify-content: center;
-    	text-align: center;
-    }
-    .phone-detail{
-    	width: 90% !important;
-    	justify-content: center;
-    	text-align: center !important;
-    	float: none !important;
-    }
-    .phone-detail strong{
-    	font-size: 1.1rem;
-    }
-    .form-detail p, .phone-detail p{
-    	font-size: 15px;
-    }
 }
 
 
